@@ -17,7 +17,7 @@
         C.Bowers
     </author>
 	
-        
+    <gap:plugin name="org.apache.cordova.file"/>    
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="iosPersistentFileLocation" value="Library" />
         
