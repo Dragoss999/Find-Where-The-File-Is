@@ -23,7 +23,7 @@ function onPageCreated() {
 
 function onDeviceReady() {
 	console.log("device ready");
-	
+	alert("device ready");
     
     //following allows you to gain access to the supported platform specific locations that are shared by all applications (useful for stioring images, music etc. )
     window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, gotFS, fail);
@@ -31,7 +31,7 @@ function onDeviceReady() {
 
 //get access to file and CREATE if does not exists
 function gotFS(fileSystem) {
-    
+    alert("gotFS");
  	fileSystem.getFile("test.txt", {create: true, exclusive: false}, gotFileEntry, fail);
     
 }
