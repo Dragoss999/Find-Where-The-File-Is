@@ -33,12 +33,14 @@ function onDeviceReady() {
 function gotFS(fileSystem) {
     
  	fileSystem.getFile("test.txt", {create: true, exclusive: false}, gotFileEntry, fail);
+    
 }
 
 //get file entry
 function gotFileEntry(fileEntry) {
 	console.log("got file entry");
 	this.fileEntry = fileEntry
+    alert("FileEntry: ");
 	fileEntry.file(gotFile, fail);
 }
 
